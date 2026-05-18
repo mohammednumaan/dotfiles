@@ -7,6 +7,16 @@
 --  priority = 1000,
 --}
 
-return {
-  "kuri-sun/yoda.nvim",
-}
+-- return {
+--     "kuri-sun/yoda.nvim",
+-- }
+
+-- return {
+--     "dgox16/oldworld.nvim",
+--     lazy = false,
+--     priority = 1000,
+-- }
+-- 
+-- return { 'datsfilipe/vesper.nvim' }
+--
+return { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 }

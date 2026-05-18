@@ -1,10 +1,14 @@
 function ColorMyPencils(color)
-    installed = "yoda"
+    installed = "moonfly"
 	color = color or installed 
+
+    if color == "moonfly" then
+        vim.g.moonflyNormalFloat = true
+    end
+
 	vim.cmd.colorscheme(color)
 
-	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+
 end
 
 ColorMyPencils();
