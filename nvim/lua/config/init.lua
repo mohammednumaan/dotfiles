@@ -2,7 +2,9 @@ require("config.remap")
 require("config.lazy")
 
 vim.opt.number = true
+vim.opt.signcolumn = "yes"
 vim.opt.clipboard = "unnamedplus"
+vim.opt.termguicolors = true
 vim.diagnostic.config({
 	signs = false,
 	underline = false,
