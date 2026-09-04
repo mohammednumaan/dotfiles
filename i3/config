@@ -48,6 +48,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
+bindsym Print exec flameshot gui -p ~/Pictures/Screenshots --clipboard
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
 set $up l
@@ -208,7 +209,6 @@ bindsym Mod1+r mode "resize"
 # finds out, if available)
 exec_always --no-startup-id ~/.config/polybar/launch.sh 
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf -b
-exec_always --no-startup-id ~./xborder/xborders --config ~/.config/xborder/config.json -b
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
 # keysym-based config which used their favorite modifier (alt or windows)
